@@ -6,11 +6,7 @@
             <title>Info window with <code>maxWidth</code></title>
             <meta charset="utf-8">
             <style>
-                #map {
-                    height: 100%;
-                }
-
-                html, body {
+                html, body, #map {
                     height: 100%;
                     margin: 0;
                     padding: 0;
@@ -63,7 +59,7 @@
 
     <a href="#" button class="button" onclick="alert('Takes user to settings page')">Settings</a>
     <a href="#" button class="button" onclick="alert('Allows user to create/edit account')">Account</a>
-    <a href="#" button class="button" onclick="alert('Allows user to create/edit account')">Account</a>
+    <a href="#" button class="button" onclick="alert('Allows user to add a review to an area')">Add Review</a>
 
     <div id="map"></div>
 
@@ -123,8 +119,6 @@
                 'Error: Your browser doesn\'t support geolocation.');
             infoWindow.open(map);
         }
-
-        <button type="button">Click Me!</button>
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjp8cvAcEYCwzuCyTQORL3Z1iQPdQMg_8&callback=initMap">
